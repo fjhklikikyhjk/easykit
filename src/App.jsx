@@ -11,20 +11,9 @@ function App() {
         <Router>
           <Navbar />
           <Routes>
-            <Route
-              key={1}
-              path='astounding-croissant-2449b7.netlify.app/:username'
-              element={<Home />}
-            />
-            <Route
-              key={2}
-              path='astounding-croissant-2449b7.netlify.app/info'
-              element={<Forms></Forms>}
-            ></Route>
-            <Route
-              path='astounding-croissant-2449b7.netlify.app/signup'
-              element={<NewUser />}
-            />
+            <Route key={1} path='/:username' element={<Home />} />
+            <Route key={2} path='/info' element={<Forms></Forms>}></Route>
+            <Route path='/signup' element={<NewUser />} />
           </Routes>
         </Router>
       </div>

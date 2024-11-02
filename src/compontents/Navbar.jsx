@@ -49,7 +49,7 @@ function Navbar() {
         </Link>
         {isauthenticated && (
           <div className='w-8 h-8 mt-3 mr-4'>
-            <Link to={"astounding-croissant-2449b7.netlify.app/info"}>
+            <Link to={"/info"}>
               <img src={pen_to_square} className='w-fit h-fit' alt='' />
             </Link>
           </div>
