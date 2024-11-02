@@ -1,0 +1,11 @@
+# Netlify configuration file
+[build]
+  base = "UGC"                # Set this to your base directory if your project files are within a subfolder
+  publish = "UGC/dist"        # Set this to your build output folder (like "dist" or "build")
+  command = "npm run build"   # Command to build your project
+
+# Redirects for client-side routing
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
